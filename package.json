@@ -1,0 +1,32 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "cypress:open": "cypress open",
+    "cypress": "cypress run",
+    "start": "npm run cypress",
+    "cypress:tags": "cypress run -e TAGS='@login_test'",
+    "static_fix": "standard --fix",
+    "clean:report": "rimraf mochawesome-report",
+    "cypress:report": "cypress run --reporter mochawesome && open ./mochawesome-report/mochawesome.html"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "cypress": "^3.8.1",
+    "cypress-xpath": "^1.4.0",
+    "cypress-cucumber-preprocessor": "^1.9.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "rimraf": "^2.6.2"
+  },
+  "description": ""
+}
