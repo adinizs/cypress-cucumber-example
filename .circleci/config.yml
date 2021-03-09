@@ -7,7 +7,6 @@ jobs:
       - image: adiniz/cypress
         environment:
           ## this enables colors in the output
-          NODE_OPTIONS: unset NODE_OPTIONS
           TERM: xterm
     working_directory: ~/app
     parallelism: 1
@@ -19,6 +18,7 @@ jobs:
             - v2-deps-{{ .Branch }}-
             - v2-deps-
       - run: npm ci
+      - run: npx cypress install --force
       - save_cache:
           key: v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
