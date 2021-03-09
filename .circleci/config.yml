@@ -18,6 +18,7 @@ jobs:
             - v2-deps-{{ .Branch }}-
             - v2-deps-
       - run: npm ci
+      - run: npm install --save-dev cypress
       - save_cache:
           key: v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
@@ -25,7 +26,7 @@ jobs:
             - ~/.cache
       - run:
           name: Running tests
-          command: unset NODE_OPTIONS npx cypress run --env=configFile=qas4
+          command: unset NODE_OPTIONS npx cypress run
       - run:
           name: Report
           command: npm run postcypress:run
