@@ -7,6 +7,7 @@ jobs:
       - image: adiniz/cypress
         environment:
           ## this enables colors in the output
+          NODE_OPTIONS: unset NODE_OPTIONS
           TERM: xterm
     working_directory: ~/app
     parallelism: 1
