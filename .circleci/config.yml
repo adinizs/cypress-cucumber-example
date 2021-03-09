@@ -25,7 +25,7 @@ jobs:
             - ~/.cache
       - run:
           name: Running tests
-          command: npx cypress run --env=configFile=$env
+          command: npx cypress run --env=configFile=qas4
       - run:
           name: Report
           command: npm run postcypress:run
