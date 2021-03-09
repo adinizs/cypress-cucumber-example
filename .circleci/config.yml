@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # the Docker image with Cypress dependencies
-      - image: adiniz/cypress
+      - image: cypress/included:6.5.0
         environment:
           ## this enables colors in the output
           TERM: xterm
@@ -18,7 +18,7 @@ jobs:
             - v2-deps-{{ .Branch }}-
             - v2-deps-
       - run: npm ci
-      - run: npm install --save-dev cypress
+      - run: npm install cypress --save-dev
       - save_cache:
           key: v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
