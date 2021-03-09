@@ -1,0 +1,76 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 4,
+    "id": "login",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 3
+      }
+    ],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login;login-with-success",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login with success",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          },
+          {
+            "name": "@login_test",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I visit the site",
+            "result": {
+              "status": "passed",
+              "duration": 33978000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "access the login page",
+            "result": {
+              "status": "passed",
+              "duration": 274000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I type my credentials",
+            "result": {
+              "status": "passed",
+              "duration": 12029000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the login is successful",
+            "result": {
+              "status": "passed",
+              "duration": 137000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

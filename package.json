@@ -5,12 +5,22 @@
   "scripts": {
     "test": "cypress open",
     "cypress:open": "cypress open",
+    "cy:verify": "cypress verify",
+    "cy:run": "cypress run",
+    "cy:info": "cypress info",
+    "cy:version": "cypress version",
+    "cy:cache:list": "cypress cache list",
+    "cy:run": "cypress run",
+    "cy:run:record": "cypress run --record",
     "cypress": "cypress run",
     "start": "npm run cypress",
     "cypress:tags": "cypress run -e TAGS='@login_test'",
     "static_fix": "standard --fix",
     "clean:report": "rimraf mochawesome-report",
-    "cypress:report": "cypress run --reporter mochawesome && open ./mochawesome-report/mochawesome.html"
+    "cypress:report": "cypress run --reporter mochawesome && open ./mochawesome-report/mochawesome.html",
+    "postcypress:run": "node ./cypress/support/multiple-cucumber-html-reporter.js",
+    "headless": "cypress run && node ./cypress/support/multiple-cucumber-html-reporter.js",
+    "cy:ci": "cypress run --env=configFile=$env"
   },
   "keywords": [
     "cypress",
@@ -23,11 +33,26 @@
     "cucumber": "^7.0.0-rc.0",
     "cypress": "6.5.0",
     "cypress-cucumber-preprocessor": "^1.19.2",
+    "cypress-plugin-tab": "^1.0.5",
     "cypress-xpath": "^1.4.0",
     "mocha": "^5.2.0",
     "mochawesome": "^3.1.1",
     "rimraf": "^2.6.2",
     "standard": "^12.0.1"
   },
-  "description": ""
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".json"
+    }
+  },
+  "description": "",
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "pure-gen": "^2.0.0"
+  }
 }

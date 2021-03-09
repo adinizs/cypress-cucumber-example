@@ -1,6 +1,6 @@
-# CYPRESS-CUCUMBER-EXAMPLE
+# AMWAY-FRONTEND-AUTOMATION
 
-> Example of web automation using cypress with cucumber
+> Automation project from Amway using Cypress
 
 ---
 
@@ -16,13 +16,13 @@
 > run test headless mode
 
 ```
-$ npm run cypress:run
+$ npm run headless
 ```
 
 > run test interface mode and display cypress playground.
 
 ```
-$ npm run cypress:open
+$ npx cypress open
 ```
 
 > run test cucumber tags.
@@ -38,5 +38,5 @@ $ npm run cypress:tags
 > run test report
 
 ```
-$ npm run cypress:report
+$ npm run postcypress:run
 ```

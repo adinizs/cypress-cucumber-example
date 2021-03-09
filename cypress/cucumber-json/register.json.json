@@ -1,0 +1,76 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Register",
+    "line": 4,
+    "id": "register",
+    "tags": [
+      {
+        "name": "@register",
+        "line": 3
+      }
+    ],
+    "uri": "register.feature",
+    "elements": [
+      {
+        "id": "register;register-with-success",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Register with success",
+        "tags": [
+          {
+            "name": "@register",
+            "line": 3
+          },
+          {
+            "name": "@register_test",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I visit the site",
+            "result": {
+              "status": "passed",
+              "duration": 3886000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "access the register page",
+            "result": {
+              "status": "passed",
+              "duration": 7959000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I set the values",
+            "result": {
+              "status": "passed",
+              "duration": 18848000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the register is finished",
+            "result": {
+              "status": "passed",
+              "duration": 21288000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

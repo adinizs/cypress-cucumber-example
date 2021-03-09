@@ -27,6 +27,6 @@ function getConfigurationByFile (file) {
 module.exports = (on, config) => {
     on('file:preprocessor', cucumber())
   // aceita um valor de "configFile" ou usa "development" por padrão
-  const file = config.env.configFile || 'dev'
+  const file = config.env.configFile || 'qas1'
   return getConfigurationByFile(file)
 }
