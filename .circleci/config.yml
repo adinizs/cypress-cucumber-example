@@ -26,7 +26,8 @@ jobs:
             - ~/.cache
       - run:
           name: Running tests
-          command: unset NODE_OPTIONS npx cypress run
+          command: unset NODE_OPTIONS
+          command: npx cypress run --env=configFile=qas4
       - run:
           name: Report
           command: npm run postcypress:run
