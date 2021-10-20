@@ -1,6 +1,6 @@
-# AMWAY-FRONTEND-AUTOMATION
+# CYPRESS-FRONTEND-AUTOMATION
 
-> Automation project from Amway using Cypress
+> Automation project using cypress + cucumber
 
 ---
 
@@ -33,10 +33,6 @@ $ npm run cypress:tags
 
 ---
 
-## Report
+## Development Pattern
 
-> run test report
-
-```
-$ npm run postcypress:run
-```
+> Page Objects

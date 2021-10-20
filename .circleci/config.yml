@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # the Docker image with Cypress dependencies
-      - image: cypress/included:6.5.0
+      - image: adiniz/cypress
         environment:
           ## this enables colors in the output
           TERM: xterm

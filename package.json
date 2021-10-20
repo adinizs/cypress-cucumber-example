@@ -10,7 +10,6 @@
     "cy:info": "cypress info",
     "cy:version": "cypress version",
     "cy:cache:list": "cypress cache list",
-    "cy:run": "cypress run",
     "cy:run:record": "cypress run --record",
     "cypress": "cypress run",
     "start": "npm run cypress",
@@ -31,7 +30,7 @@
   "license": "ISC",
   "devDependencies": {
     "cucumber": "^7.0.0-rc.0",
-    "cypress": "6.5.0",
+    "cypress": "^8.6.0",
     "cypress-cucumber-preprocessor": "^1.19.2",
     "cypress-plugin-tab": "^1.0.5",
     "cypress-xpath": "^1.4.0",

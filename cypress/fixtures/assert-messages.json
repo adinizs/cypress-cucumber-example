@@ -1,0 +1,8 @@
+{
+  "login": {
+    "welcome_message": "Bem vindo, Quality Assurance!"
+  },
+  "register": {
+    "register_success_message": "Usuário inserido com sucesso"
+  }
+}

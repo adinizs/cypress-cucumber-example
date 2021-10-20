@@ -17,7 +17,7 @@ const cucumber = require('cypress-cucumber-preprocessor').default
 const fs = require('fs-extra')
 const path = require('path')
 
-function getConfigurationByFile (file) {
+function getConfigurationByFile(file) {
   // caminho da pasta onde estão presentes os arquivos JSON dos ambientes
   const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
 
@@ -25,8 +25,8 @@ function getConfigurationByFile (file) {
 }
 
 module.exports = (on, config) => {
-    on('file:preprocessor', cucumber())
+  on('file:preprocessor', cucumber())
   // aceita um valor de "configFile" ou usa "development" por padrão
-  const file = config.env.configFile || 'qas1'
+  const file = config.env.configFile || 'qa'
   return getConfigurationByFile(file)
 }
